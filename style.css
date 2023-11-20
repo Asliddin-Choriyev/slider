@@ -90,6 +90,9 @@ body {
   }
 }
 @media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
   .images {
     margin-left: -440px;
     width: 1180px;
@@ -142,16 +145,11 @@ body {
   }
 }
 @media (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-  .contain {
-    width: 700px;
-    margin-left: 355px;
-    margin-top: 10px;
-  }
+  /* body {
+    overflow-y: hidden;
+  } */
   img {
-    width: 760px;
+    width: 650px;
   }
   .carousel-btn {
     position: absolute;
@@ -161,7 +159,7 @@ body {
   }
   .images {
     width: 650px;
-    margin-left: -299px;
+    margin-left: -387px;
     margin-top: 5px;
     height: 450px;
   }
@@ -188,7 +186,7 @@ body {
 @media (max-width: 500px) {
   .images {
     width: 455px;
-    margin-left: -332px;
+    margin-left: -425px;
   }
   img {
     width: 455px;
@@ -212,30 +210,29 @@ body {
   }
 }
 @media (max-width: 400px) {
-  .contain {
+  /* .contain {
     margin-left: 2px;
-  }
+  } */
   .images {
-    width: 370px;
-    height: 400px;
-    margin-left: 10px;
+    margin-left: -437px;
+    width: 425px;
   }
   img {
-    width: 380px;
-    height: 420px;
+    width: 425px;
   }
   .prev {
-    margin-left: -155px;
+    margin-left: -125px;
     width: 80px;
-    margin-top: 250px;
+    margin-top: 350px;
   }
   .next {
     width: 80px;
-    margin-left: 105px;
-    margin-top: 250px;
+    margin-left: 125px;
+    margin-top: 350px;
   }
   .developer {
-    margin-top: 150px;
+    margin-top: 230px;
+    margin-left: 35px;
   }
   .next:hover,
   .prev:hover {
@@ -285,4 +282,3 @@ body {
     margin-top: 115px;
   }
 }
-  
