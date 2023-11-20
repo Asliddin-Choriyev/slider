@@ -1,0 +1,288 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(green, white);
+  overflow: hidden;
+}
+
+.images {
+  width: 1000px;
+  height: 510px;
+  display: flex;
+  overflow: hidden;
+  border: 10px solid red;
+}
+.contain {
+  margin-left: 448px;
+}
+.image > img {
+  width: 700px;
+}
+.next:hover,
+.prev:hover {
+  background-image: linear-gradient(black, white);
+  width: 65px;
+  height: 65px;
+}
+.carousel-btn {
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prev {
+  position: absolute;
+  top: 29%;
+  left: 19%;
+}
+.next {
+  position: absolute;
+  left: 76.5%;
+  top: 29%;
+}
+
+.developer {
+  text-align: center;
+  margin-top: 360px;
+  opacity: 0.5;
+  font-size: 26px;
+}
+
+@media (max-width: 1875px) {
+  .next {
+    margin-left: 50px;
+  }
+  .developer {
+    margin-top: 385px;
+  }
+}
+@media (max-width: 1500px) {
+  .images {
+    width: 1000px;
+    margin-left: -190px;
+    margin-top: -15px;
+  }
+
+  .next {
+    margin-top: 350px;
+    width: 200px;
+    margin-left: -100px;
+  }
+  .prev {
+    margin-top: 350px;
+    margin-left: -30px;
+    width: 200px;
+  }
+  .developer {
+    margin-top: 300px;
+  }
+  .next:hover,
+  .prev:hover {
+    background-image: linear-gradient(black, white);
+    width: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .images {
+    margin-left: -440px;
+    width: 1180px;
+    height: 600px;
+    margin-top: -50px;
+  }
+  img {
+    width: 1180px;
+  }
+  .next {
+    margin-top: 400px;
+  }
+  .prev {
+    margin-top: 400px;
+  }
+  .next:hover,
+  .prev:hover {
+    background-image: linear-gradient(black, white);
+    width: 200px;
+  }
+  .developer {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .images {
+    width: 980px;
+  }
+  img {
+    width: 980px;
+  }
+}
+@media (max-width: 900px) {
+  .images {
+    margin-left: -443px;
+    width: 890px;
+    margin-top: -50px;
+  }
+  img {
+    width: 890px;
+  }
+  .developer {
+    margin-top: 150px;
+    font-size: 20px;
+  }
+  .next:hover,
+  .prev:hover {
+    background-image: linear-gradient(black, white);
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  .contain {
+    width: 700px;
+    margin-left: 355px;
+    margin-top: 10px;
+  }
+  img {
+    width: 760px;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    font-size: 40px;
+  }
+  .images {
+    width: 650px;
+    margin-left: -299px;
+    margin-top: 5px;
+    height: 450px;
+  }
+  .prev {
+    margin-left: -250px;
+    margin-top: 300px;
+    width: 200px;
+  }
+  .next {
+    margin-left: 145px;
+    margin-top: 300px;
+    width: 200px;
+  }
+  .next:hover,
+  .prev:hover {
+    background-image: linear-gradient(black, white);
+    width: 200px;
+  }
+  .developer {
+    margin-top: 155px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .images {
+    width: 455px;
+    margin-left: -332px;
+  }
+  img {
+    width: 455px;
+  }
+  .next {
+    margin-left: 100px;
+    width: 120px;
+  }
+  .prev {
+    margin-left: -180px;
+    width: 120px;
+  }
+  .developer {
+    margin-top: 150px;
+  }
+  .next:hover,
+  .prev:hover {
+    background-image: linear-gradient(black, white);
+    width: 120px;
+    height: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .contain {
+    margin-left: 2px;
+  }
+  .images {
+    width: 370px;
+    height: 400px;
+    margin-left: 10px;
+  }
+  img {
+    width: 380px;
+    height: 420px;
+  }
+  .prev {
+    margin-left: -155px;
+    width: 80px;
+    margin-top: 250px;
+  }
+  .next {
+    width: 80px;
+    margin-left: 105px;
+    margin-top: 250px;
+  }
+  .developer {
+    margin-top: 150px;
+  }
+  .next:hover,
+  .prev:hover {
+    background-image: linear-gradient(black, white);
+    width: 70px;
+    height: 80px;
+  }
+}
+@media (max-width: 375px) {
+  .contain {
+    width: 370px;
+    margin-top: 100px;
+  }
+  img {
+    width: 355px;
+    height: 400px;
+  }
+  .images {
+    width: 360px;
+    height: 400px;
+    margin-left: 5px;
+  }
+  .carousel-btn {
+    width: 100px;
+  }
+  .prev {
+    margin-left: -38px;
+    transform: rotate(90deg);
+    margin-top: -175px;
+    width: 70px;
+    height: 80px;
+  }
+  .next {
+    margin-left: -42px;
+    margin-top: 328px;
+    transform: rotate(90deg);
+    width: 70px;
+    height: 80px;
+  }
+  .next:hover,
+  .prev:hover {
+    background-image: linear-gradient(black, white);
+    width: 70px;
+    height: 80px;
+  }
+  .developer {
+    margin-top: 115px;
+  }
+}
+  
